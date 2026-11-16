@@ -1,0 +1,18 @@
+PS D:\...\musicblocks-v4> git diff modules/singer/src/core/keySignature.ts
+
+ diff --git a/modules/singer/src/core/keySignature.ts b/modules/singer/src/core/keySignature.ts
+ --- a/modules/singer/src/core/keySignature.ts
+ +++ b/modules/singer/src/core/keySignature.ts
+ @@ -65,7 +65,7 @@ export default class KeySignature implements IKeySignature {
+          'diminished': [2, 1, 2, 1, 2, 1, 2, 1],
+          'spanish':    [1, 2, 1, 1, 1, 2, 2, 2],
+          'octatonic':  [1, 2, 1, 2, 1, 2, 1, 2],
+ -        'bebop':      [1, 1, 1, 2, 2, 1, 2, 2],
+ +        'bebop':      [2, 2, 1, 2, 2, 1, 1, 1],
+          // 7 notes in an octave.
+          'major':      [2, 2, 1, 2, 2, 2, 1],
+          'harmonic major': [2, 2, 1, 2, 1, 3, 1],
+
+ Both arrays sum to 12 (one octave of semitones).
+ The new pattern produces  C  D  E  F  G  A  Bb  B  C  in the key of C,
+ which is the bebop dominant scale that Music Blocks v3 ships.

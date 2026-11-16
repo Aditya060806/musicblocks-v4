@@ -1,0 +1,15 @@
+﻿Singer module test run on branch #1049-fix-bebop-scale-match-v3
+================================================================
+
+Command:  npm test   (from modules/singer)
+Result:   Tests  159 passed (159)  — one more than develop (158)
+
+The new test shows up in the output as:
+
+  ✓ src/core/tests/keySignature.test.ts > Key Signature > bebop mode steps match Music Blocks v3  0ms
+
+Full tail of the Vitest run:
+
+  Test Files  7 passed (7)
+       Tests  159 passed (159)
+    Duration  15.77s

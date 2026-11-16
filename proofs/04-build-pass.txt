@@ -1,0 +1,12 @@
+PS D:\...\musicblocks-v4> npm run build
+
+> @sugarlabs/musicblocks4@4.2.0 build
+> lerna --scope @sugarlabs/mb4-app run build
+
+ dist/.../lib.view-CxRU7bna.js.gz             192.91 KB  gzip:  59.64 KB
+ dist/.../module.editor-Bnm-b_ID.js.gz         50.26 KB  gzip:  16.56 KB
+ dist/.../module.singer-BOhwsJB-.js.gz        259.08 KB  gzip:  64.83 KB   <- fix compiled in
+ dist/.../module.painter-CvEfuzUH.js.gz      1159.29 KB  gzip: 333.59 KB
+
+ Lerna (powered by Nx)  Successfully ran target build for project @sugarlabs/mb4-app
+  Run duration:  1m 35s

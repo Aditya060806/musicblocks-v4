@@ -1,0 +1,14 @@
+PS D:\...\musicblocks-v4> npm run check
+
+> @sugarlabs/musicblocks4@4.2.0 check
+> lerna run check
+
+ > @sugarlabs/mb4-module-singer:check    tsc    (no output, clean)
+ > @sugarlabs/mb4-module-painter:check   tsc    (no output, clean)
+ > @sugarlabs/mb4-module-runtime:check   tsc    (no output, clean)
+ > @sugarlabs/mb4-module-menu:check      tsc    (no output, clean)
+ > @sugarlabs/mb4-app:check              tsc    (no output, clean)
+
+ Lerna (powered by Nx)  Successfully ran target check for 15 projects
+  Run duration:   17.2s
+  Critical path:  17.1s (3 tasks)

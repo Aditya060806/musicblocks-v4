@@ -1,0 +1,25 @@
+PS D:\...\musicblocks-v4\modules\singer> npm test
+
+> @sugarlabs/mb4-module-singer@4.2.0 test
+> vitest
+
+ [+] src/core/tests/currentPitch.test.ts  (17 tests)
+ [+] src/core/tests/musicUtils.test.ts    ( 2 tests)
+ [+] src/core/tests/scale.test.ts         ( 5 tests)
+ [+] src/core/tests/temperament.test.ts   (13 tests)
+ [+] src/core/tests/voice.test.ts         ( 2 tests)
+ [+] src/core/tests/synthUtils.test.ts    ( 1 test )
+ [+] src/core/tests/keySignature.test.ts  (14 tests)
+
+ [OK] Key Signature > instantiation                               3ms
+ [OK] Key Signature > closest note tests                          3ms
+ [OK] Key Signature > scalar / semitone distance and transforms   5ms
+ [OK] Key Signature > invert transforms                           2ms
+ [OK] Key Signature > Mode equivalents                            2ms
+ [OK] Key Signature > Testing meantone scales                     0ms
+ [OK] Key Signature > Testing scales                              5ms
+ [OK] Key Signature > bebop mode steps match Music Blocks v3      0ms   <- new test
+
+ Test Files  7 passed (7)
+      Tests  159 passed (159)              <- +1 over develop (158)
+   Duration  15.77s
