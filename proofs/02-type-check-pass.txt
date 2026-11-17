@@ -1,0 +1,16 @@
+PS D:\...\musicblocks-v4> npm run check
+
+> @sugarlabs/musicblocks4@4.2.0 check
+> lerna run check
+
+ > @sugarlabs/mb4-module-singer:check   tsc    (clean)
+ > @sugarlabs/mb4-module-painter:check  tsc    (clean)
+ > @sugarlabs/mb4-module-runtime:check  tsc    (clean)
+ > @sugarlabs/mb4-module-menu:check     tsc    (clean)
+ > @sugarlabs/mb4-app:check             tsc    (clean)
+
+ Lerna (powered by Nx)  Successfully ran target check for 15 projects
+
+The one-line setter change compiles cleanly; no caller site needed
+changes because the method signature and return behaviour are
+unchanged.

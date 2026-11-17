@@ -1,0 +1,26 @@
+PS D:\...\musicblocks-v4\modules\singer> npm test
+
+> @sugarlabs/mb4-module-singer@4.2.0 test
+> vitest
+
+ [+] src/core/tests/currentPitch.test.ts  (17 tests)
+ [+] src/core/tests/musicUtils.test.ts    ( 2 tests)
+ [+] src/core/tests/scale.test.ts         ( 5 tests)
+ [+] src/core/tests/temperament.test.ts   (16 tests)      <- was 13 on develop
+ [+] src/core/tests/voice.test.ts         ( 2 tests)
+ [+] src/core/tests/synthUtils.test.ts    ( 1 test )
+ [+] src/core/tests/keySignature.test.ts  (13 tests)
+
+ [OK] class Temperament > Temperament generation > Generate 'equal 12' temperament instance and verify members    4ms
+ [OK] class Temperament > Temperament generation > Generate 'equal 1' temperament instance ... negative octaves   0ms
+ [OK] class Temperament > Ratio generation                                                                        2ms
+ [OK] class Temperament > Frequency Index from Generic Note Name and Octave                                       1ms
+ [OK] class Temperament > Modal Index and Octave from Frequency Index                                             0ms
+
+ [OK] class Temperament > numberOfOctaves setter > setting to 8 leaves the value at 8                             0ms    <- new
+ [OK] class Temperament > numberOfOctaves setter > a negative input is treated as its absolute value              0ms    <- new
+ [OK] class Temperament > numberOfOctaves setter > values below 1 are clamped to 1                                0ms    <- new
+
+ Test Files  7 passed (7)
+      Tests  161 passed (161)              <- +3 over develop (158)
+   Duration   2.30s

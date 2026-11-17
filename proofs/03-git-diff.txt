@@ -1,0 +1,26 @@
+PS D:\...\musicblocks-v4> git diff modules/singer/src/core/temperament.ts
+
+ diff --git a/modules/singer/src/core/temperament.ts b/modules/singer/src/core/temperament.ts
+ --- a/modules/singer/src/core/temperament.ts
+ +++ b/modules/singer/src/core/temperament.ts
+ @@ -282,7 +282,7 @@ export default class Temperament implements ITemperament {
+       * span 96 notes).
+       */
+      public set numberOfOctaves(num: number) {
+ -        this._numberOfOctaves = Math.min(1, Number(Math.abs(num)));
+ +        this._numberOfOctaves = Math.max(1, Number(Math.abs(num)));
+      }
+
+      /**
+       * The number of octaves in the temperament.
+       */
+      public get numberOfOctaves(): number {
+         return this._numberOfOctaves;
+     }
+
+ One character.  Math.min(1, X) returns the smaller of 1 and |X|,
+ so any input >= 1 was pinned to 1.  Math.max(1, X) floors the
+ value at 1 and lets callers request any larger range, matching
+ the method's own doc comment:
+ "@param num - The number of octaves ... (8 octaves in equal
+ temperament would span 96 notes)."
